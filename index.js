@@ -52,6 +52,7 @@ var arr = [],apiResponse=[];
       appliedFilter = parseFloat(current);
       arr = arr.filter(item => parseFloat(item.current) >= parseFloat(current)).sort(SortBy);
       constructView();
+      document.getElementById("bestBuyPrice").value="";
       
     }
 
